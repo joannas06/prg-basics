@@ -12,5 +12,6 @@ while countdown > 0:
     print(countdown)
     countdown -= 1
     time.sleep(1)  # Wait for 1 second
+    
 
 print("Time's up!")
