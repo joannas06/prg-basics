@@ -7,11 +7,12 @@ original_file = 'healthy_lifestyle.txt'
 target_file = 'copy_healthy_lifestyle.txt'
 
 # read the content of the original file
-with open as (file):
-   content = file.read()
-...
-...
+with open (original_file, 'r') as original:
+   content = original.read()
+
 
 # write the content to the target file (copy)
-with ... as ...:
-   ... .write(...)
+with open (target_file, 'w') as target:
+   target.write(content)
+
+print('Completed')
