@@ -6,8 +6,9 @@ polish_license_plates = [
    'WA7930T', 'SK6922I', 'KK61108', 'KR90538', 'BI8052Q',
    'KK54985', 'LU4864U'
 ]
-counter = 1
+counter = 0
 for car_number in polish_license_plates:
    if car_number[0] == 'K':
-      print(counter, car_number)
-      counter += 1
+            counter += 1
+            counterstr = str(counter) + '.'
+            print(counterstr, car_number)

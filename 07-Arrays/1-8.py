@@ -4,4 +4,9 @@ computer_games = [
    "Elden Ring", "Apex Legends", "Call of Duty: Warzone"
 ]
 
-while 
+computer_games.sort()
+
+i = 0
+while 1 <len(computer_games):
+    print(f'{i+1}. {computer_games[i]}')
+    i += 1
