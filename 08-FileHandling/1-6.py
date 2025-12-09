@@ -2,7 +2,7 @@
 # Reads the entire contents of a file
 #
 def read_from_file(name):
-   with open(name, 'r') as file:
+   with open(name,'r') as file:
       content = file.read()
    return content
 

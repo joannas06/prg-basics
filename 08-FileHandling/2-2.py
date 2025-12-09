@@ -15,9 +15,9 @@ seven_wonders = [
 file_name = 'seven_wonders.txt'
 
 # Sort data alphabetically
-sorted_alphabetically = seven_wonders.sort
+seven_wonders.sort()
 
 # Write data to the file
 with open(file_name, 'w') as file:
       for item in seven_wonders:
-         file.write(sorted_alphabetically)
+         file.write(item + '\n')

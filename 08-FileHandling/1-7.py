@@ -9,10 +9,9 @@ def read_from_file(name):
 # reads the entire file and splits lines into array
 file_content = read_from_file('car_park.txt')
 file_lines = file_content.splitlines()
-file_int = int([file_lines])
 # calculates the total number of cars parked
 total = 0
 for line in file_lines:
-   total += file_int
+   total += int(line)
 
-print('Total cars parked:', ...)
+print('Total cars parked:', total)
