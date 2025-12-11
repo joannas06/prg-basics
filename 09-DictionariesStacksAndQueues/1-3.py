@@ -1,7 +1,10 @@
 mobile = {
 "OS":"Android",
-"Model":"Google Pixel 9",
-"Space":"256GB"
+"Model":"Xiaomi 15 Pro",
+"Space":"256gb",
+"RAM":"8gb",
+"Production date":"2019",
+"Price":"1000$"
 }
 for key,value in mobile.items():
-   print(f"{key} :{value}")
+   print(f"{key} : {value}")

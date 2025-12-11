@@ -7,19 +7,17 @@ person = {
    "phone":{"landline":"123444321","mobile":"777888999"}
 }
 
-def f(person):
-    print(person['name'])
-    print(person['hobby'])
-    print(person)
-    person['surname'] = 'Nowak'
-    person['married'] = False
-    person['gender'] = 'male'
-    person['hobby'] = 'swimming','excursions','bicycle'
-    print(person)
+print(person['name'])
+print(person['hobby'])
+print(person)
+person['surname'] = 'Nowak'
+print(person['surname'])
+person["married"] = False
+print(person['married'])
+person['gender'] = 'male'
+print(person['gender'])
+person['hobby'] = 'bicycle','swimming','excursions'
+print(person['hobby'])
 
-
-print(f(person))
-
-    
-
-
+for key,value in person.items():
+    print(f'{key}:{value}')
