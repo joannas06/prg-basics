@@ -10,5 +10,5 @@ for i in arr1:
     i = i**2
     arr2.append(i)
 
-print(arr1)
-print(arr2)
+print(*arr1)
+print(*arr2)
