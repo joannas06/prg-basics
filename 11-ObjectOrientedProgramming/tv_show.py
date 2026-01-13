@@ -1,20 +1,33 @@
-# tv_show.py file
-# main program
-import tv
+from tv import TV
 
 def main():
-   # object creation
-   telewizor = tv.TV()
+    # i. Create TV set
+    my_tv = TV()
 
-   # object usage
-   telewizor.show_status()
-   telewizor.turn_on()
-   telewizor.show_status()
-   telewizor.set_channels(['TVP1','TVP2','Polsat','TVN','Filmbox','Discovery'])
-   telewizor.show_status()
-   telewizor.turn_off()
-   telewizor.show_status()
-   
+    # ii. Show TV status
+    my_tv.show_status()
+
+    # iii. Turn TV on
+    my_tv.turn_on()
+    my_tv.change_volume(5)
+
+    # iv. Show TV status
+    my_tv.show_status()
+    
+    #set channels
+    list = ["TVP1", "TVP2", "Polsat", "TVN", "Filmbox", "Discovery"]
+    my_tv.set_channels(list)
+    my_tv.show_channels()
+
+    #change channel no
+    my_tv.change_channel_no(3)
+    my_tv.show_status()
+
+    # v. Turn TV off
+    my_tv.turn_off()
+
+    # vi. Show TV status
+    my_tv.show_status()
 
 if __name__ == "__main__":
-   main() 
+    main()

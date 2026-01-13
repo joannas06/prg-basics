@@ -4,7 +4,8 @@ class SocialMediaProfile:
         self.posts = []
 
     def add_post(self, content):
-        self.posts.append(content)
+        post = content.split(",")
+        self.posts.append(post)
         print(f"{self.username} added a new post: {content}")
 
     def display_timeline(self):
@@ -12,5 +13,5 @@ class SocialMediaProfile:
         print(f'Your posts are: {self.posts}')
 
 john = SocialMediaProfile('johndoe')
-john.add_post(['Hello, World!','Had a great day at the park!',"What's up, Natalie? How are you?",])
+john.add_post("Hello, World!, Had a great day at the park!, What's up Natalie? How are you?")
 
