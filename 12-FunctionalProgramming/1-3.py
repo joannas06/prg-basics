@@ -1,6 +1,6 @@
 def ms_to_kmh(ms):
-    x = ms*(3600/1000)
-    return x
+    kmh = ms*3.6
+    return kmh
 
-print(ms_to_kmh(10))
-print(ms_to_kmh(35))
+if __name__ == "__main__":
+    print(ms_to_kmh(100))
